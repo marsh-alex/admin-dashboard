@@ -15,12 +15,18 @@
 .header {
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    grid-template-rows: .5fr .5fr;
 }
 
+.bell {
+    width: 20px;
+    height: 20px;
+}
 
-
+.michael {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
 
 .sidebar {
     grid-column: 1/2;
