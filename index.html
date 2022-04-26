@@ -11,19 +11,37 @@
     <div class="wrapper">
         <div class="header">
             <div class="search-container">
-                <label for="search-bar"><img src="magnify.svg" alt="search icon"></label>
-                <input type="text" placeholder="Search..">
-            </div>
+                <label for="search-bar" class="search-icon"><img src="magnify.svg" 
+                         alt="search icon"></label>
+                <input class="search" type="text">
+            </div>    
             <div class="profile-container">
-                <a href="#"><img src="bell-ring-outline.svg" class="bell" 
+                <a href="#" class="bell"><img src="bell-ring-outline.svg" 
                         alt="notification icon"></a>
-                <a href="#"><img src="michael.jpeg" class="michael"></a>
-                <a href="#"><h2>Michael Scott</h2></a>
+                <a href="#" class="michael"><img src="michaelscott.jpeg"  ></a>
+                <a href="#" class="profile-name"><h3>Michael Scott</h3></a>
+            </div>
+            <div class="greeting-container">
+                <a href="#" class="profile-pic"><img src="michaelscott.jpeg" ></a>
+                <h3 class="name">Michael Scott (@bestboss)</h3>
+            </div>
+            <div class="upload-container">
+                <button class="btn new" type="button">New</button>
+                <button class="btn upload" type="button">Upload</button>
+                <button class="btn share" type="button">Share</button>
             </div>
         </div>
-
-
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img class="dashboard-icon" src="dashboard.png">
+                <h2 class="title">BizSight</h2>
+            </div>
+           <div class="sidebar-main">
+                <a href="#" class="menu-tab"><img src="home.png">Home</a>
+           </div>
+        </div>
+        
+        
         <div class="main-content"></div>
     </div>
 </body>
