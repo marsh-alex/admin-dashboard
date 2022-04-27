@@ -192,7 +192,7 @@ a:visited {
 
 .sidebar-main {
     display: grid; 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(10, 1fr) 5fr;
     justify-items: center;
     align-items: center;
@@ -200,14 +200,17 @@ a:visited {
     grid-row: 2/3;
 }
 
-.menu-tab {
-    height: 1em;
+.sidebar-main img {
+    height: 20px;
 }
 
-.menu-tab img {
-    height: 1em;
-    grid-column: 2/3;
+.tab {
+    height: 20px;
+    transform: scale(1.1);
+    justify-self: start;
+    
 }
+
 
 /* Main Content Section */
 .main-content {
