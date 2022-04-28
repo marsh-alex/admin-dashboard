@@ -183,6 +183,10 @@ a:visited {
     align-items: center;
 }
 
+.sidebar-header h2 {
+    color: white;
+}
+
 .dashboard-icon {
     height: 3em;
 }
@@ -235,4 +239,43 @@ a:visited {
 /* Main Content Section */
 .main-content {
     background-color: #f0f9ff;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 50px 1fr;
+}
+
+/* repeat(auto-fit, minmax(150px, 300px)); */
+
+.projects-header {
+    display: grid;
+    grid-template-rows: 50px;
+    align-items: center;
+}
+
+.projects-header h2 {
+    padding-left: 25px;
+    height: 5px;
+    font-size: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column: 1/2;
+    gap: 10px;
+    padding-left: 25px;
+}
+
+.project {
+    border: 1px solid grey;
+}
+
+.project h3 {
+    height: 1em;
+    font-size: 20px;
+}
+
+.actions {
+    display: grid;
+    
 }
