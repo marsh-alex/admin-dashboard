@@ -130,16 +130,15 @@ a:visited {
 
 .upload-container {
     display: grid;
-    grid-template-columns: 1fr 100px 100px 100px 50px;
+    grid-template-columns: 1fr 100px 100px 50px;
+    grid-template-rows: 1fr;
     align-items: center;
     justify-items: end;
-
 }
-
 
 .btn {
     height: 30px;
-    width: 90px;
+    width: 80px;
     border-radius: 25px;
     border: none;
     background-color: #0ea5e9;
@@ -152,15 +151,15 @@ a:visited {
 }
 
 .new {
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 
 .upload {
-    grid-column: 3/4;
+    grid-column: 2/3;
 }
 
 .share {
-    grid-column: 4/5;
+    grid-column: 3/4;
 }
 
 /* Sidebar Section */
@@ -244,7 +243,6 @@ a:visited {
     grid-template-rows: 50px 1fr;
 }
 
-/* repeat(auto-fit, minmax(150px, 300px)); */
 
 .projects-header {
     display: grid;
@@ -254,7 +252,8 @@ a:visited {
 
 .projects-header h2 {
     padding-left: 25px;
-    height: 5px;
+    padding-bottom: 10px;
+    height: 1em;
     font-size: 20px;
 }
 
@@ -268,14 +267,50 @@ a:visited {
 
 .project {
     border: 1px solid grey;
+    display: grid;
+    grid-template-rows: 2em 8em 2rem;
+    border-radius: 10px;
+    box-shadow: inset 5px 0 0 0 #ea580c;
+    background-color: white;
+    max-height: 200px;
 }
 
 .project h3 {
     height: 1em;
     font-size: 20px;
+    padding-left: 25px;
+    padding-top: 10px;
+    
+}
+
+.project p {
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-weight: lighter;
+    color:#414445
 }
 
 .actions {
     display: grid;
-    
+    grid-template-columns: 1fr 50px 50px 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.actions img {
+    height: 25px;
+}
+
+.bookmark {
+    grid-column: 2/3;
+}
+
+.share {
+    grid-column: 3/4;
+}
+
+.options {
+    grid-column: 4/5;
 }
