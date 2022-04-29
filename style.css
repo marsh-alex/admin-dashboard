@@ -331,3 +331,42 @@ a:visited {
 
 /* Announcements container */ 
 
+.announcements-header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    align-items: center;
+}
+
+.announcements-header h2 {
+    padding-left: 25px;
+    padding-bottom: 10px;
+    height: 1em;
+    font-size: 20px;
+}
+
+.announcements-container {
+    display: grid;
+    grid-template-rows: ;
+}
+
+.announcement {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.announcement h5 {
+    height: 1em;
+    font-size: 15px;
+}
+
+.announcement p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+    color:#414445
+}
